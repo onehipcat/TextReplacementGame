@@ -7,6 +7,7 @@ public class ByeScript : MonoBehaviour {
 
 	string target = "hello";
 	int index = 0;
+	bool active = false;
 	TextMesh textMesh;
 
 	void Start () {
@@ -15,24 +16,26 @@ public class ByeScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (index > target.Length) {
-			return;
-		}
-		if (Input.GetKey (KeyCode.H)){
-			CheckLetter ('h');
-		}
-		if (Input.GetKey (KeyCode.E)){
-			CheckLetter ('e');
-		}
-		if (Input.GetKey (KeyCode.L)){
-			CheckLetter ('l');
-		}
-		if (Input.GetKey (KeyCode.O)){
-			CheckLetter ('o');
+		if (active) {
+			if (Input.GetKeyUp (KeyCode.H)){
+				CheckLetter ('h');
+			}
+			if (Input.GetKeyUp (KeyCode.E)){
+				CheckLetter ('e');
+			}
+			if (Input.GetKeyUp (KeyCode.L)){
+				CheckLetter ('l');
+			}
+			if (Input.GetKeyUp (KeyCode.O)){
+				CheckLetter ('o');
+			}
 		}
 	}
 
 	void CheckLetter(char letter) {
+		if (index > target.Length) {
+			return;
+		}
 		if (target[index] == letter) {
 			StringBuilder sb = new StringBuilder(textMesh.text, target.Length);
 			sb.Length = target.Length;
@@ -49,6 +52,9 @@ public class ByeScript : MonoBehaviour {
 				Healthandgameover.health -= 10;
 				Debug.Log ("Health:" + Healthandgameover.health);
 			}
+		}
+		if (other.gameObject.name == "cnndonlemon") {
+			active = true;
 		}
 	}
 
