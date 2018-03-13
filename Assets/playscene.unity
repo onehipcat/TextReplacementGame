@@ -259,6 +259,9 @@ GameObject:
   m_Component:
   - component: {fileID: 93110268}
   - component: {fileID: 93110267}
+  - component: {fileID: 93110270}
+  - component: {fileID: 93110269}
+  - component: {fileID: 93110271}
   m_Layer: 0
   m_Name: cnndonlemon
   m_TagString: Untagged
@@ -321,6 +324,70 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &93110269
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 93110266}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 12.8, y: 7.2}
+    newSize: {x: 12.8, y: 7.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 12.8, y: 7.2}
+  m_EdgeRadius: 0
+--- !u!50 &93110270
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 93110266}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &93110271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 93110266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 156059e4fec354ce3bc851606aba9315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tTxt: {fileID: 16820616}
+  tTxt3: {fileID: 601142737}
+  aTxt: {fileID: 1455522893}
+  lTxt: {fileID: 1697129891}
+  lTxt2: {fileID: 1660874660}
+  sTxt: {fileID: 152818092}
+  hTxt: {fileID: 258443180}
+  oTxt: {fileID: 0}
 --- !u!1 &125308026
 GameObject:
   m_ObjectHideFlags: 0
@@ -1432,6 +1499,7 @@ GameObject:
   - component: {fileID: 1038928692}
   - component: {fileID: 1038928694}
   - component: {fileID: 1038928693}
+  - component: {fileID: 1038928695}
   m_Layer: 0
   m_Name: ByeText
   m_TagString: Untagged
@@ -1561,6 +1629,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.9, y: 1.4523438}
   m_EdgeRadius: 0
+--- !u!114 &1038928695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1038928688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05326b71d12ab4c5ca125b141d27b5b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1304929366
 GameObject:
   m_ObjectHideFlags: 0

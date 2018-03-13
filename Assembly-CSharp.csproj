@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{41D971CF-569F-A65A-B795-DF47F58468F2}</ProjectGuid>
+    <ProjectGuid>{27228FD4-BFC9-8992-BB87-EED424EBF0F8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\ByeScript.cs" />
      <Compile Include="Assets\Destroyscript.cs" />
      <Compile Include="Assets\GameManager.cs" />
      <Compile Include="Assets\Gamewin.cs" />
