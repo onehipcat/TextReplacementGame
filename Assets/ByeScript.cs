@@ -19,43 +19,40 @@ public class ByeScript : MonoBehaviour {
 			return;
 		}
 		if (Input.GetKey (KeyCode.H)){
-			if (target[index] == 'h') {
-				StringBuilder sb = new StringBuilder(textMesh.text, target.Length);
-				sb.Length = target.Length;
-				sb[index] = 'h';
-				textMesh.text = sb.ToString();
-				index++;
-				Debug.Log ("h correctly pressed");
-			}
+			CheckLetter ('h');
 		}
 		if (Input.GetKey (KeyCode.E)){
-			if (target[index] == 'e') {
-				StringBuilder sb = new StringBuilder(textMesh.text, target.Length);
-				sb.Length = target.Length;
-				sb[index] = 'e';
-				textMesh.text = sb.ToString();
-				index++;
-				Debug.Log ("e correctly pressed");
-			}
+			CheckLetter ('e');
 		}
 		if (Input.GetKey (KeyCode.L)){
-			if (target[index] == 'l') {
-				StringBuilder sb = new StringBuilder(textMesh.text, target.Length);
-				sb.Length = target.Length;
-				sb[index] = 'l';
-				textMesh.text = sb.ToString();
-				index++;
-				Debug.Log ("l correctly pressed");
-			}
+			CheckLetter ('l');
 		}
 		if (Input.GetKey (KeyCode.O)){
-			if (target[index] == 'o') {
-				StringBuilder sb = new StringBuilder(textMesh.text, target.Length);
-				sb.Length = target.Length;
-				sb[index] = 'o';
-				textMesh.text = sb.ToString();
-				Debug.Log ("o correctly pressed");
+			CheckLetter ('o');
+		}
+	}
+
+	void CheckLetter(char letter) {
+		if (target[index] == letter) {
+			StringBuilder sb = new StringBuilder(textMesh.text, target.Length);
+			sb.Length = target.Length;
+			sb[index] = letter;
+			textMesh.text = sb.ToString();
+			index++;
+			Debug.Log (letter + " correctly pressed");
+		}
+	}
+
+	void OnTriggerEnter2D(Collider2D other) {
+		if (other.gameObject.GetComponent<Healthandgameover> ()) {
+			if (this.CheckCorrect() == false) {
+				Healthandgameover.health -= 10;
+				Debug.Log ("Health:" + Healthandgameover.health);
 			}
 		}
+	}
+
+	bool CheckCorrect() {
+		return textMesh.text == target;
 	}
 }

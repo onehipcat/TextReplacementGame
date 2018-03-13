@@ -20,11 +20,18 @@ public class Healthandgameover : MonoBehaviour {
 		
 		
 	}
-	void OnTriggerEnter2D(Collider2D other){
-		if (other.gameObject.GetComponent<textmove> ()) {
+	void OnTriggerEnter2D(Collider2D other) {
+		/*if (other.gameObject.GetComponent<textmove> ()) {
 			health -= 10;
 			Debug.Log ("Health:" + health);
-		}
+		}*/
+		/*var wordscript = other.gameObject.GetComponent<ByeScript> ();
+		if (wordscript) {
+			if (wordscript.CheckCorrect() == false) {
+				health -= 10;
+				Debug.Log ("Health:" + health);
+			}
+		}*/
 	}
 		
 }
