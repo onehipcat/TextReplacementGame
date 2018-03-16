@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Text;
 
-public class ByeScript : MonoBehaviour {
+public class WordReplaceScript : MonoBehaviour {
 
-	string target = "hello";
+	public string target = "hello";
 	int index = 0;
 	bool active = false;
 	TextMesh textMesh;
@@ -17,17 +17,13 @@ public class ByeScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (active) {
-			if (Input.GetKeyUp (KeyCode.H)){
-				CheckLetter ('h');
-			}
-			if (Input.GetKeyUp (KeyCode.E)){
-				CheckLetter ('e');
-			}
-			if (Input.GetKeyUp (KeyCode.L)){
-				CheckLetter ('l');
-			}
-			if (Input.GetKeyUp (KeyCode.O)){
-				CheckLetter ('o');
+			foreach (KeyCode code in System.Enum.GetValues(typeof(KeyCode))) {
+				if (Input.GetKeyUp (code)) {
+					var str = code.ToString ();
+					if (str.Length == 1) {
+						CheckLetter (System.Char.ToLower(str [0]));
+					}
+				}
 			}
 		}
 	}

@@ -1617,9 +1617,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1038928688}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05326b71d12ab4c5ca125b141d27b5b4, type: 3}
+  m_Script: {fileID: 11500000, guid: 2cb1ae6404cf64df6a0f0c4e6d35c798, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: hello
 --- !u!1 &1304929366
 GameObject:
   m_ObjectHideFlags: 0
@@ -2011,6 +2012,7 @@ GameObject:
   - component: {fileID: 1515031148}
   - component: {fileID: 1515031150}
   - component: {fileID: 1515031149}
+  - component: {fileID: 1515031151}
   m_Layer: 0
   m_Name: SadText
   m_TagString: Untagged
@@ -2140,6 +2142,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.7, y: 1.4523438}
   m_EdgeRadius: 0
+--- !u!114 &1515031151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1515031144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cb1ae6404cf64df6a0f0c4e6d35c798, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: happy
 --- !u!1 &1660874660
 GameObject:
   m_ObjectHideFlags: 0
