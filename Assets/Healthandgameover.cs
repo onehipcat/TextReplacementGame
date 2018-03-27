@@ -14,9 +14,9 @@ public class Healthandgameover : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		//if (health == 0) {
-			//SceneManager.LoadScene ("gameoverscene");
-		//}
+		if (health == 0) {
+			SceneManager.LoadScene ("gameoverscene");
+		}
 		
 		
 	}

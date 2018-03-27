@@ -1,12 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/HealthDisplayScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/WordReplaceScript.cs">
     <Files>
-      <File FileName="Assets/Destroyscript.cs" Line="20" Column="2" />
-      <File FileName="Assets/ByeScript.cs" Line="53" Column="25" />
-      <File FileName="../../../CODE LAB 1/CLAssign1/Assets/playermovement.cs" Line="55" Column="2" />
-      <File FileName="Assets/Healthandgameover.cs" Line="17" Column="23" />
+      <File FileName="Assets/Destroyscript.cs" Line="1" Column="1" />
+      <File FileName="../../../CODE LAB 1/CLAssign1/Assets/playermovement.cs" Line="1" Column="1" />
+      <File FileName="Assets/Healthandgameover.cs" Line="1" Column="1" />
       <File FileName="Assets/HealthDisplayScript.cs" Line="16" Column="18" />
+      <File FileName="Assets/WordReplaceScript.cs" Line="29" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
