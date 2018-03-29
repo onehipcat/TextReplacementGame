@@ -53,7 +53,10 @@
   <ItemGroup>
      <Compile Include="Assets\Destroyscript.cs" />
      <Compile Include="Assets\GameManager.cs" />
+     <Compile Include="Assets\GameStartScript.cs" />
+     <Compile Include="Assets\GameStartScript2.cs" />
      <Compile Include="Assets\Gamewin.cs" />
+     <Compile Include="Assets\GameWinforReal.cs" />
      <Compile Include="Assets\Healthandgameover.cs" />
      <Compile Include="Assets\HealthDisplayScript.cs" />
      <Compile Include="Assets\textmove.cs" />

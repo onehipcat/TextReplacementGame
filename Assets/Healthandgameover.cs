@@ -8,6 +8,8 @@ public class Healthandgameover : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+		health = 50;
 		
 	}
 	
