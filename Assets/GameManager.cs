@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//leftover script from previous version, left in to show my process
+
 public class GameManager : MonoBehaviour {
 
 	//public static int health = 50;

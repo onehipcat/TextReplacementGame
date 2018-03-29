@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Destroyscript : MonoBehaviour {
+//leftover script I don't use, but that I left in here to show my process
 
+public class Destroyscript : MonoBehaviour {
+/*
 	public GameObject tTxt;
 	public GameObject tTxt3;
 	public GameObject aTxt;
@@ -46,5 +48,5 @@ public class Destroyscript : MonoBehaviour {
 		if (Input.GetKey (KeyCode.L)) {
 			Destroy (oTxt);
 		}
-	}
+	}*/
 }

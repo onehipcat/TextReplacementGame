@@ -9,11 +9,11 @@ public class HealthDisplayScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		myText = GetComponent<Text> ();
+		myText = GetComponent<Text> (); //sets a variable for getting the UI text component
 	}
 
 	// Update is called once per frame
 	void Update () {
-		myText.text = "HEALTH: " + Healthandgameover.health;
+		myText.text = "HEALTH: " + Healthandgameover.health; //displays health on the UI text
 	}
 }

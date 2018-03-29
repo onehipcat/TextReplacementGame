@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class textmove : MonoBehaviour {
 
-	private float moveSpeed = 0.1f;
+	private float moveSpeed = 0.1f; //sets a var for move speed
 
 	// Use this for initialization
 	void Start () {
@@ -14,7 +14,7 @@ public class textmove : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		transform.Translate (-moveSpeed, 0, 0);
+		transform.Translate (-moveSpeed, 0, 0); //sets text to move
 		
 	}
 }
