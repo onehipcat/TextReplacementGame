@@ -1,18 +1,18 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/GameWinforReal.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/WordReplaceScript.cs">
     <Files>
-      <File FileName="Assets/WordReplaceScript.cs" Line="51" Column="21" />
-      <File FileName="Assets/Healthandgameover.cs" Line="20" Column="66" />
-      <File FileName="Assets/Destroyscript.cs" Line="36" Column="19" />
-      <File FileName="../../../CODE LAB 1/CLAssign1/Assets/playermovement.cs" Line="15" Column="33" />
-      <File FileName="Assets/HealthDisplayScript.cs" Line="14" Column="2" />
-      <File FileName="Assets/Gamewin.cs" Line="11" Column="17" />
-      <File FileName="Assets/textmove.cs" Line="10" Column="17" />
-      <File FileName="Assets/GameManager.cs" Line="8" Column="2" />
-      <File FileName="Assets/GameStartScript.cs" Line="22" Column="3" />
-      <File FileName="Assets/GameStartScript2.cs" Line="18" Column="38" />
-      <File FileName="Assets/GameWinforReal.cs" Line="15" Column="3" />
+      <File FileName="Assets/WordReplaceScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/Healthandgameover.cs" Line="1" Column="1" />
+      <File FileName="Assets/Destroyscript.cs" Line="1" Column="1" />
+      <File FileName="../../../CODE LAB 1/CLAssign1/Assets/playermovement.cs" Line="1" Column="1" />
+      <File FileName="Assets/HealthDisplayScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/Gamewin.cs" Line="1" Column="1" />
+      <File FileName="Assets/textmove.cs" Line="1" Column="1" />
+      <File FileName="Assets/GameManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/GameStartScript.cs" Line="1" Column="1" />
+      <File FileName="Assets/GameStartScript2.cs" Line="1" Column="1" />
+      <File FileName="Assets/GameWinforReal.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
