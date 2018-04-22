@@ -9,9 +9,18 @@ public class WordReplaceScript : MonoBehaviour {
 	int index = 0; //sets character of current target string (string we want to change words to
 	bool active = false; //a bool that prevents offscreen words from being affected
 	TextMesh textMesh; //var for getting the text mesh component
+	public AudioClip typeSound;
+	public AudioClip returnSound;
+	private AudioSource source;
 
 	void Start () {
 		textMesh = GetComponent<TextMesh>(); //initializing textMesh var
+	}
+
+	void Awake () {
+
+		source = GetComponent<AudioSource>();
+
 	}
 	
 	// Update is called once per frame
@@ -25,6 +34,13 @@ public class WordReplaceScript : MonoBehaviour {
 						CheckLetter (System.Char.ToLower(str [0])); //passes lowercase version of released keycode to CheckLetter function
 					}
 				}
+			}
+			if (textMesh.text == target) { //if the textmesh component we just changed doesn't match the target, then run this
+				//Player has completed word! Change color and set inactive
+				textMesh.color = Color.blue;
+				active = false;
+				//Play sound
+				source.PlayOneShot(returnSound, 1.0f);
 			}
 		}
 	}
@@ -43,6 +59,8 @@ public class WordReplaceScript : MonoBehaviour {
 			index++; //moved on to the next character
 			Debug.Log (letter + " correctly pressed"); //convenient for us
 		}
+		//Play sound
+		source.PlayOneShot(typeSound, 0.5f);
 	}
 
 	void OnTriggerEnter2D(Collider2D other) { //calls collider function
