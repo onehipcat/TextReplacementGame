@@ -681,6 +681,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: monsters
   typeSound: {fileID: 8300000, guid: 53346f136ec254b009aa5d7d926fae6b, type: 3}
+  wrongLetterSound: {fileID: 0}
   returnSound: {fileID: 8300000, guid: 28c0f79a4899e4af8ac322aae3c15c5c, type: 3}
 --- !u!114 &164492901
 MonoBehaviour:
@@ -1081,7 +1082,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 181288187}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 497.7, y: 0.7, z: -3}
+  m_LocalPosition: {x: 511.6, y: 0.6, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1178,7 +1179,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 222683872}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 398.5, y: 0.7, z: -3}
+  m_LocalPosition: {x: 407.9, y: 0.8, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1479,6 +1480,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: lie
   typeSound: {fileID: 8300000, guid: 53346f136ec254b009aa5d7d926fae6b, type: 3}
+  wrongLetterSound: {fileID: 0}
   returnSound: {fileID: 8300000, guid: 28c0f79a4899e4af8ac322aae3c15c5c, type: 3}
 --- !u!114 &303052294
 MonoBehaviour:
@@ -1965,7 +1967,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 411185590}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 391.6, y: 0.5, z: -3}
+  m_LocalPosition: {x: 401, y: 0.7, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2131,6 +2133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: stubby
   typeSound: {fileID: 8300000, guid: 53346f136ec254b009aa5d7d926fae6b, type: 3}
+  wrongLetterSound: {fileID: 0}
   returnSound: {fileID: 8300000, guid: 28c0f79a4899e4af8ac322aae3c15c5c, type: 3}
 --- !u!102 &449191764
 TextMesh:
@@ -2468,6 +2471,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: news
   typeSound: {fileID: 8300000, guid: 53346f136ec254b009aa5d7d926fae6b, type: 3}
+  wrongLetterSound: {fileID: 0}
   returnSound: {fileID: 8300000, guid: 28c0f79a4899e4af8ac322aae3c15c5c, type: 3}
 --- !u!102 &514860635
 TextMesh:
@@ -2542,7 +2546,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 514860630}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 489.3, y: 0.6, z: -3}
+  m_LocalPosition: {x: 503.2, y: 0.6, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2736,7 +2740,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 622345094}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 479.3, y: 0.7, z: -3}
+  m_LocalPosition: {x: 493.6, y: 0.7, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3125,7 +3129,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 755974479}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 458.1, y: -1.2, z: -3}
+  m_LocalPosition: {x: 471.2, y: -1, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3232,6 +3236,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: mindless
   typeSound: {fileID: 8300000, guid: 53346f136ec254b009aa5d7d926fae6b, type: 3}
+  wrongLetterSound: {fileID: 0}
   returnSound: {fileID: 8300000, guid: 28c0f79a4899e4af8ac322aae3c15c5c, type: 3}
 --- !u!114 &811067862
 MonoBehaviour:
@@ -3472,6 +3477,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: stupid
   typeSound: {fileID: 8300000, guid: 53346f136ec254b009aa5d7d926fae6b, type: 3}
+  wrongLetterSound: {fileID: 0}
   returnSound: {fileID: 8300000, guid: 28c0f79a4899e4af8ac322aae3c15c5c, type: 3}
 --- !u!114 &837437315
 MonoBehaviour:
@@ -3999,6 +4005,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: hate
   typeSound: {fileID: 8300000, guid: 53346f136ec254b009aa5d7d926fae6b, type: 3}
+  wrongLetterSound: {fileID: 0}
   returnSound: {fileID: 8300000, guid: 28c0f79a4899e4af8ac322aae3c15c5c, type: 3}
 --- !u!82 &1000446353
 AudioSource:
@@ -4434,6 +4441,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: graves
   typeSound: {fileID: 8300000, guid: 53346f136ec254b009aa5d7d926fae6b, type: 3}
+  wrongLetterSound: {fileID: 0}
   returnSound: {fileID: 8300000, guid: 28c0f79a4899e4af8ac322aae3c15c5c, type: 3}
 --- !u!102 &1122177934
 TextMesh:
@@ -4508,7 +4516,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1122177929}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 457.8, y: 0.5, z: -3}
+  m_LocalPosition: {x: 471, y: 0.7, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4605,7 +4613,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1133838503}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 394.8, y: -1, z: -3}
+  m_LocalPosition: {x: 404.6, y: -1, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4702,7 +4710,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1154595729}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 441.9, y: 0.6, z: -3}
+  m_LocalPosition: {x: 455.2, y: 0.9, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4906,6 +4914,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: violent
   typeSound: {fileID: 8300000, guid: 53346f136ec254b009aa5d7d926fae6b, type: 3}
+  wrongLetterSound: {fileID: 0}
   returnSound: {fileID: 8300000, guid: 28c0f79a4899e4af8ac322aae3c15c5c, type: 3}
 --- !u!114 &1282563024
 MonoBehaviour:
@@ -5316,6 +5325,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: farcical
   typeSound: {fileID: 8300000, guid: 53346f136ec254b009aa5d7d926fae6b, type: 3}
+  wrongLetterSound: {fileID: 0}
   returnSound: {fileID: 8300000, guid: 28c0f79a4899e4af8ac322aae3c15c5c, type: 3}
 --- !u!114 &1330998235
 MonoBehaviour:
@@ -5894,7 +5904,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1453013655}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 518.3, y: -0.4, z: 0}
+  m_LocalPosition: {x: 532, y: -0.1, z: 0}
   m_LocalScale: {x: 1.8750193, y: 12.037562, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5991,6 +6001,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: mice
   typeSound: {fileID: 8300000, guid: 53346f136ec254b009aa5d7d926fae6b, type: 3}
+  wrongLetterSound: {fileID: 0}
   returnSound: {fileID: 8300000, guid: 28c0f79a4899e4af8ac322aae3c15c5c, type: 3}
 --- !u!102 &1496929744
 TextMesh:
@@ -6311,6 +6322,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: smear
   typeSound: {fileID: 8300000, guid: 53346f136ec254b009aa5d7d926fae6b, type: 3}
+  wrongLetterSound: {fileID: 0}
   returnSound: {fileID: 8300000, guid: 28c0f79a4899e4af8ac322aae3c15c5c, type: 3}
 --- !u!102 &1505912779
 TextMesh:
@@ -6550,6 +6562,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: expose
   typeSound: {fileID: 8300000, guid: 53346f136ec254b009aa5d7d926fae6b, type: 3}
+  wrongLetterSound: {fileID: 8300000, guid: 28c0f79a4899e4af8ac322aae3c15c5c, type: 3}
   returnSound: {fileID: 8300000, guid: 28c0f79a4899e4af8ac322aae3c15c5c, type: 3}
 --- !u!82 &1515031152
 AudioSource:
@@ -6888,6 +6901,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: aint
   typeSound: {fileID: 8300000, guid: 53346f136ec254b009aa5d7d926fae6b, type: 3}
+  wrongLetterSound: {fileID: 0}
   returnSound: {fileID: 8300000, guid: 28c0f79a4899e4af8ac322aae3c15c5c, type: 3}
 --- !u!102 &1649363114
 TextMesh:
@@ -6962,7 +6976,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1649363109}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 394.8, y: 0.6, z: -3}
+  m_LocalPosition: {x: 404.5, y: 0.6, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7059,7 +7073,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1706221888}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 489.3, y: -1.1, z: -3}
+  m_LocalPosition: {x: 504.4, y: -1, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

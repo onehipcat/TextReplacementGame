@@ -10,6 +10,7 @@ public class WordReplaceScript : MonoBehaviour {
 	bool active = false; //a bool that prevents offscreen words from being affected
 	TextMesh textMesh; //var for getting the text mesh component
 	public AudioClip typeSound;
+	public AudioClip wrongLetterSound;
 	public AudioClip returnSound;
 	private AudioSource source;
 
@@ -50,17 +51,21 @@ public class WordReplaceScript : MonoBehaviour {
 		if (index >= target.Length) {
 			return; //Ends the function once the target string has been reached (In gameplay, this means once a word has finished being replaced. Prevents errors.)
 		}
-		if (target[index] == letter) { //compares our passed keycode with the intended target. If it matches it, then it proceeds with the if/then
-			StringBuilder sb = new StringBuilder(textMesh.text, target.Length); //creates the sb variable to refer to stringbuilder
+		if (target [index] == letter) { //compares our passed keycode with the intended target. If it matches it, then it proceeds with the if/then
+			StringBuilder sb = new StringBuilder (textMesh.text, target.Length); //creates the sb variable to refer to stringbuilder
 			//Googled StringBuilder. Allows us to edit strings, rather than leaving strings immutable as is default.
 			sb.Length = target.Length; //force stringbuilder to be as long as target
-			sb[index] = letter; //now that we know the keycode is correct, we can set the current index in the stringbuilder to match it.
-			textMesh.text = sb.ToString(); //replaces the text in the textmesh with the value we just set stringbuilder to
+			sb [index] = letter; //now that we know the keycode is correct, we can set the current index in the stringbuilder to match it.
+			textMesh.text = sb.ToString (); //replaces the text in the textmesh with the value we just set stringbuilder to
 			index++; //moved on to the next character
 			Debug.Log (letter + " correctly pressed"); //convenient for us
+			//Play sound if they typed it correctly
+			source.PlayOneShot (typeSound, 0.5f);
+		} else {
+			//Play incorrect sound if they typed the wrong letter
+			source.PlayOneShot (wrongLetterSound, 0.5f);
 		}
-		//Play sound
-		source.PlayOneShot(typeSound, 0.5f);
+
 	}
 
 	void OnTriggerEnter2D(Collider2D other) { //calls collider function
