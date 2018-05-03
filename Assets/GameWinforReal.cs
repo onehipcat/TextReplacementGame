@@ -16,7 +16,9 @@ public class GameWinforReal : MonoBehaviour {
 	}
 	void OnTriggerEnter2D(Collider2D other) { //calls collider function
 		if (other.gameObject.GetComponent<Healthandgameover> ()) {
-			SceneManager.LoadScene ("gamewinscene");
+			//ModifyScoreTSP(1, -1, 0); JEFF LOOK HERE
+			//SceneManager.LoadScene ("gamewinscene"); JEFF IGNORE THIS
 		}
 			}
+		
 }

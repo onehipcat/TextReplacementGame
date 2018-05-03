@@ -17,12 +17,14 @@ public class Healthandgameover : MonoBehaviour {
 	void Update () {
 
 		if (health <= 0) {
-			SceneManager.LoadScene ("gameoverscene"); //loads the gameoverscene when health runs out
+			//ModifyScoreTSP (1, 1, 0); JEFF LOOK HERE
+			//TriggerFail (); JEFF LOOK HERE
+			//SceneManager.LoadScene ("gameoverscene"); //loads the gameoverscene when health runs out
 		}
 		
 		
 	}
-	void OnTriggerEnter2D(Collider2D other) { //leftover from previous version, kept in here for reference and if I want to do collider stuff here
+	//void OnTriggerEnter2D(Collider2D other) { //leftover from previous version, kept in here for reference and if I want to do collider stuff here
 		/*if (other.gameObject.GetComponent<textmove> ()) {
 			health -= 10;
 			Debug.Log ("Health:" + health);
@@ -34,6 +36,5 @@ public class Healthandgameover : MonoBehaviour {
 				Debug.Log ("Health:" + health);
 			}
 		}*/
-	}
-		
+	//}
 }
