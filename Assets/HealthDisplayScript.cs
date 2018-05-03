@@ -14,6 +14,6 @@ public class HealthDisplayScript : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		myText.text = "HEALTH: " + Healthandgameover.health; //displays health on the UI text
+		myText.text = "UNCENSORED WORD LIMIT: " + Healthandgameover.health; //displays health on the UI text
 	}
 }

@@ -71,7 +71,7 @@ public class WordReplaceScript : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other) { //calls collider function
 		if (other.gameObject.GetComponent<Healthandgameover> ()) { //checks to see if we collided with an item that has the healthandgameover script on it
 			if (textMesh.text != target) { //if the textmesh component we just changed doesn't match the target, then run this
-				Healthandgameover.health -= 10; //reduces health by 10
+				Healthandgameover.health -= 1; //reduces health by 10
 				Debug.Log ("Health:" + Healthandgameover.health); //convenient for us
 			}
 		}
